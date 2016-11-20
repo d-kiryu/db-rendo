@@ -8,12 +8,14 @@
 	body { font-size:13pt; color:gray; margin:5px 25px; }
 	tr { margin:5px;}
 	th { padding:5px; color:white; background:darkgray; }
-    td { padding:5px; color:black; background:#e0e0ff; }
+    td { padding:5px; color:white; background:lightgreen; }
+/*     td { padding:5px; color:black; background:#e0e0ff; } */
 	.err { color:red; }
 	</style>
 </head>
 <body>
 	<h1 th:text="#{content.title}">Helo page</h1>
+	<p>データを入力してください</p>
 	<div id="tbl1">
 		<table>
 		<form method="post" action="/" th:object="${formModel}">

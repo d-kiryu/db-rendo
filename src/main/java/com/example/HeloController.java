@@ -98,22 +98,22 @@ public class HeloController {
 	@PostConstruct
 	public void init() {
 		MyData d1 = new MyData();
-		d1.setName("yamada taro");
+		d1.setName("アウェイク　太郎");
 		d1.setAge(88);
-		d1.setMail("yamada@taro");
-		d1.setMemo("aiueo");
+		d1.setMail("awake@taro");
+		d1.setMemo("12345");
 		repository.saveAndFlush(d1);
 		MyData d2 = new MyData();
-		d2.setName("sato jiro");
-		d2.setAge(35);
-		d2.setMail("sato@jiro");
-		d2.setMemo("momomo");
+		d2.setName("mukoujima masujirou");
+		d2.setAge(75);
+		d2.setMail("mukoujima@masujirou");
+		d2.setMemo("abcdef");
 		repository.saveAndFlush(d2);
 		MyData d3 = new MyData();
-		d3.setName("ryuubi");
+		d3.setName("劉備　玄徳");
 		d3.setAge(24);
 		d3.setMail("ryuubi@gentoku");
-		d3.setMemo("syoku");
+		d3.setMemo("蜀");
 		repository.saveAndFlush(d3);
 		
 	}
