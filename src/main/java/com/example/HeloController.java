@@ -14,8 +14,8 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.example.repositories.MyDataRepository;
 
-import javax.annotation.PostConstruct;
-
+/*import javax.annotation.PostConstruct;
+*/
 @Controller
 public class HeloController {
 	
@@ -95,7 +95,7 @@ public class HeloController {
 		return new ModelAndView("redirect:/");
 	}
 	
-	@PostConstruct
+/*	@PostConstruct
 	public void init() {
 		MyData d1 = new MyData();
 		d1.setName("アウェイク　太郎");
@@ -116,5 +116,5 @@ public class HeloController {
 		d3.setMemo("蜀");
 		repository.saveAndFlush(d3);
 		
-	}
+	}*/
 }
